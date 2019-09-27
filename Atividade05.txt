@@ -1,0 +1,10 @@
+1. Crie o modelo fisico para cada modelo relacional utilizando a ferramenta MySQL Workbench ou SQL Power Architect.
+
+a) 
+Projeto(numero_projeto*, nome_projeto, data_inicio_projeto, numero_gerente)
+Projeto_Empregado(numero_projeto*, numero_empregado*, horas_trabalhadas_projeto)
+Empregado(numero_empregado*, nome_empregado, numero_depto)
+Gerente(numero_gerente*, nome_gerente)
+Departamento(numero_depto*, nome_depto)
+
+b)
