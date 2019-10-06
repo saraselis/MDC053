@@ -9,7 +9,7 @@ Departamento (numero_depto*, nome_depto)
 
 b)
 Pedido (cod_pedido*, dat_emissao, cod_fornecedor, vlr_total_pedido)
-Pedido_Material (cod_pedido*, cod_material*, qtd_pedido, vl_total_material)
+Pedido_Material (cod_pedido*, cod_material*, qtd_pedido, vlr_total_material)
 Material (cod_material*, dsc_material, vlr_unitario),
 Fornecedor (cod_fornecedor*, nom_fornecedor, end_fornecedor)
 
