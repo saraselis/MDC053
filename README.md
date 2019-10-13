@@ -8,11 +8,9 @@ Repositório criado para realização de atividades práticas desta disciplina.
 * Atividade 02
 * Atividade 03
 * Atividade 04
-* Atividade 05
 
 ### Atividades em Sala 2
+* Atividade 05
 * Atividade 06
 * Atividade 07
 * Atividade 08
-* Atividade 09
-* Atividade 10
