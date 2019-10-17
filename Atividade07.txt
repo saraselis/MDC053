@@ -44,7 +44,7 @@ CREATE TABLE historico(
   
 b) Insira um registro na tabela aluno preechendo somente a coluna id_aluno com o valor 1. Qual foi o resultado?
 
-c) Insira os seguintes registro na tabela aluno.
+c) Insira os seguintes registros na tabela aluno.
 
 id_aluno        nome_aluno
 1               JOSE
@@ -67,15 +67,17 @@ id_professor   nome_professor
 
 g) Insira um registro na tabela turma com os valores 1 para id_turma, 20192 para num_periodo. Qual foi o resultado?
 
-h) Insira um registro na tabela turma com os valores 2 para id_turma, 20192 para num_periodo e 3 para id_professor. Qual foi o resultado?
+h) Insira um registro na tabela turma com os valores 1 para id_turma, 20201 para num_periodo. Qual foi o resultado?
 
-i) Insira os registros na tabela turma.
+i) Insira um registro na tabela turma com os valores 2 para id_turma, 20201 para num_periodo e 3 para id_professor. Qual foi o resultado?
+
+j) Insira os registros na tabela turma.
 
 id_turma   num_periodo   id_professor  id_disciplina
 3          20201         1             1
 4          20202         2             2
 
-j) Insira os registros na tabela historico.
+k) Insira os registros na tabela historico.
 
 id_historico    id_turma   id_aluno
 1               1          1
@@ -90,4 +92,3 @@ id_historico    id_turma   id_aluno
 alterar registros 
 
 excluir registros
-
