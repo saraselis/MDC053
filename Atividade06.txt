@@ -1,4 +1,4 @@
-1. Cria o script DDL para cada modelo físico de banco de dados.
+1. Criar o script DDL para cada modelo físico de banco de dados.
 
 a)
    PROJETO                                      
