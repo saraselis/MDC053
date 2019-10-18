@@ -51,6 +51,7 @@ id_aluno        nome_aluno
 2               MARIA
 3               BRUNO
 4               CARLA
+5               PEDRO
 
 d) Insira um registro na tabela disciplina com os valores 1 para id_disciplina, BANCO DE DADOS I para nome_disciplina e -1 para carga_horaria. Qual foi o resultado?
 
@@ -89,6 +90,14 @@ id_historico    id_turma   id_aluno
 7               4          3
 8               4          4
 	   
-alterar registros 
+l) Altere o nome do aluno JOSE para JOAO.
 
-excluir registros
+m) Altere o id_disciplina de BANCO DE DADOS I para o valor 3. Qual foi o resultado?
+
+n) Altere a media_final dos alunos que estão na turma de BANCO DE DADOS II para 5.
+
+o) Exclua o aluno PEDRO. Qual foi o resultado?
+
+p) Exclua a disciplina BANCO DE DADOS II. Qual foi o resultado?
+
+q) Exclua o professor JOSE REGINALDO. Qual foi o resultado?
