@@ -38,7 +38,7 @@ CREATE TABLE historico(
   num_faltas SMALLINT,
   media_final DECIMAL(3,1),
   PRIMARY KEY(id_historico),
-  FOREIGN KEY(id_turma) REFERENCES professor(id_turma) ON DELETE CASCADE,
+  FOREIGN KEY(id_turma) REFERENCES turma(id_turma) ON DELETE CASCADE,
   FOREIGN KEY(id_aluno) REFERENCES aluno(id_aluno)
 );
   
