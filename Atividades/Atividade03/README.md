@@ -5,7 +5,7 @@
   1.
 
   ```text
-   (o)codigo                              (o)matricula
+   (*)codigo                              (*)matricula
       |    ( )nome                           |   ( )nome
       |     |                 +              |    |                +
     +--------------+ (1,1)   / \    (0,N) +-------------+ (1,1)  / \
@@ -15,10 +15,10 @@
                             lota       salario( )     +-----------+
   ```
 
-  1.
+  2.
   
   ```text
-  ( )logradouro                     (o)id
+  ( )logradouro                     (*)id
       | ( )numero                       | ( )nome
       |  |                +             |  |
     +----------+ (1,1)   / \    (1,1) +--------+
@@ -37,10 +37,10 @@
                                ( )cpf         ( )cnpj
   ```
 
-  1.
+  3.
   
   ```text
-   (o)cpf             ( )data      (o)crm
+   (*)cpf             ( )data      (*)crm
       |  ( )nome         |            |  ( )nome  
       |   |            +-+-+          |   |  
    +----------+ (0,N)  |/ \|  (1,N) +--------+
