@@ -12,20 +12,23 @@
      |nome_curso VARCHAR(100) NOT NULL|
      |carga_horaria SMALLINT          |
      +--------------------------------+
+                 _|_
                   |
                   |
                   |
      TURMA       /|\
-     +----------------------------+
-     |id_turma INT NOT NULL AI PK |
-     +----------------------------+
-     |id_curso INT NOT NULL FK    |
-     |id_aluno INT NOT NULL FK    |
-     |data_matricula DATE NOT NULL|
+     +----------------------------+            PROFESSOR
+     |id_turma INT NOT NULL AI PK |            +------------------------------------+
+     +----------------------------+            |id_professor INT NOT NULL AI PK     |
+     |id_curso INT NOT NULL FK    |\           +------------------------------------+
+     |id_professor INT NOT NULL FK|-+--------|-|nome_professor VARCHAR(100) NOT NULL|
+     |id_aluno INT NOT NULL FK    |/           |titulacao_professor CHAR(3)         |
+     |data_matricula DATE NOT NULL|            +------------------------------------+
      +----------------------------+
                  \|/
                   |
                   |
+                 _|_
      ALUNO        |
      +--------------------------------+
      |id_aluno INT NOT NULL AI PK     |
@@ -39,67 +42,38 @@
   2.
 
   ```text
-     MEDICO
-     +---------------------------------+           ESPECIALIDADE
-     |cod_medico INT AI PK             |           +---------------------------------------+
-     +---------------------------------+\          |cod_especialidade INT NOT NULL PK      |
-     |nome_medico VARCHAR(100) NOT NULL| |-----|-+---------------------------------------+
-     |cod_especialidade INT NOT NULL FK|/          |dsc_especialidade VARCHAR(100) NOT NULL|
-     +---------------------------------+           +---------------------------------------+
-                  |
-                  |
-                  |
-     CONSULTA    /|\
-     +------------------------------+
-     |id_consulta INT NOT NULL AI PK|
-     +------------------------------+
-     |id_medico INT NOT NULL FK     |
-     |id_paciente INT NOT NULL FK   |
-     |data_consulta DATE NOT NULL   |
-     +------------------------------+
-                 \|/
-                  o
-                  |
-     PACIENTE     |
-     +-----------------------------------+
-     |id_paciente INT NOT NULL AI PK     |
-     +-----------------------------------+
-     |nome_paciente VARCHAR(100) NOT NULL|
-     +-----------------------------------+
+     ENDERECO                               PESSOA
+     +-------------------------+            +--------------------------+
+     |id INT NOT PFK           |            |id INT NOT NULL PK        |
+     +-------------------------+            +--------------------------+
+     |logradouro VARCHAR(100)  |-|O-------|-|nome VARCHAR(100) NOT NULL|
+     |numero INT DEFAULT 0     |            +--------------------------+
+     |cep CHAR(0) NOT NULL     |                 |               |
+     |cidade VARCHAR(30)       |                =|=             =|=
+     |uf CHAR(2) NOT NULL      |                 |               |
+     +-------------------------+                 |               |
+                                                 |               |
+                                                =|=             =|=
+                                 FISICA          |               |          JURIDICA
+                                 +---------------------+    +----------------------+
+                                 |id INT NOT NULL PFK  |    |id INT NOT NULL PFK   |
+                                 +---------------------+    +----------------------+
+                                 |sexo CHAR(1)         |    |sexo CHAR(1)          |
+                                 |cpf CHAR(11) NOT NULL|    |cnpj CHAR(14) NOT NULL|
+                                 +---------------------+    +----------------------+
+
   ```
 
   3.
 
   ```text
-     LIVRO
-     +---------------------------------+        EDITORA
-     |id_livro INT AI PK               |        +---------------------------------+
-     +---------------------------------+\       |cod_editora INT NOT NULL AI PK   |
-     |num_isbn CHAR(13) NOT NULL UNIQUE|--------+---------------------------------+
-     |tit_livro VARCHAR(100) NOT NULL  |/       |nom_editora VARCHAR(100) NOT NULL|
-     |num_paginas SMALLINT CHECK > 0   |        +---------------------------------+
-     |cod_editora INT NOT NULL FK      |
-     +---------------------------------+
-                  |
-                  |
-                  |
-     EMPRESTIMO  /|\
-     +---------------------------------+
-     |id_emprestimo INT NOT NULL AI PK |
-     +---------------------------------+
-     |id_livro INT NOT NULL FK         |
-     |id_aluno INT NOT NULL FK         |
-     |dat_emprestimo DATE NOT NULL     |
-     |dat_devolucao DATE               |
-     +---------------------------------+
-                 \|/
-                  |
-                  |
-     ALUNO        |
-     +---------------------------------+
-     |id_aluno INT NOT NULL AI PK      |
-     +---------------------------------+
-     |num_matricula INT NOT NULL UNIQUE|
-     |nom_aluno VARCHAR(100) NOT NULL  |
-     +---------------------------------+
+                                           FUNCIONARIO
+     DEPARTAMENTO                          +-----------------------------+
+     +--------------------------+          |matricula INT NOT NULL PK    |
+     |codigo INT PK             |         /+-----------------------------+\
+     +--------------------------+-|-----O+-|nome VARCHAR(100) NOT NULL   |-+O---+
+     |nome VARCHAR(100) NOT NULL|         \|salario DECIMAL(100) NOT NULL|/     |
+     +--------------------------+          |gerente INT FK               |      |
+                                           |departamento INT FK NOT NULL |-|----+
+                                           +-----------------------------+
   ```

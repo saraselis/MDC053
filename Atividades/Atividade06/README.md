@@ -2,9 +2,9 @@
 
 - Executar comandos DDL e DML em um banco de dados MariaDB ou PostgreSQL.
 
-  1. Crie um banco de dados chamado academico no SGDB da sua preferência.
+  1. Crie um banco de dados chamado academico no SGDB de sua preferência.
   
-  2. Crie uma conexão com o banco de dados academico no DBeaver.
+  2. Crie uma conexão no DBeaver Community com o banco de dados academico.
   
   3. Execute o seguinte script DDL.
   
