@@ -2,7 +2,9 @@
 
 - Converter cada DER para a notação James Martin utilizando Draw.io.
 
-  1. (o)codigo                              (o)matricula
+  1.
+  ´´´bash
+   (o)codigo                              (o)matricula
       |    ( )nome                           |   ( )nome
       |     |                 +              |    |                +
     +--------------+ (1,1)   / \    (0,N) +-------------+ (1,1)  / \
@@ -10,7 +12,7 @@
     +--------------+         \ /          +-------------+        \ /
                               +                |      | (0,N)     +
                             lota       salario( )     +-----------+
-
+  ´´´  
   2. ( )logradouro                     (o)id
       | ( )numero                       | ( )nome
       |  |                +             |  |

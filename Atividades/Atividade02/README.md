@@ -1,6 +1,6 @@
 # Objetivo
 
-- Elaborar um DER na notação James Martin utilizando Draw.io.
+- Elaborar um DER na notação James Martin para cada estudo de caso utilizando Draw.io.
 
   1. Uma empresa de produtos farmacêuticos deseja criar um sistema para captar pedidos de compra dos seus clientes (farmácias e drogarias). Um cliente possui uma ficha contendo nome, cgc, endereço, cidade, estado, cep, telefone e pessoa contato. É informado na solicitação do pedido o nome do cliente, data do pedido, nome do medicamento, quantidade e preço. O valor total do pedido é calculado ao final da escolha dos medicamentos. O medicamento pode ser genérico (princípio ativo, data de validade, nome do laboratório) ou de marca (nome do medicamento, data de validade, nome do laboratório, cor da tarja).
 

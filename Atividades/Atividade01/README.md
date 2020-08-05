@@ -1,6 +1,6 @@
 # Objetivo
 
-- Elaborar um DER na notação Peter Chain utilizando Draw.io ou Pencil.
+- Elaborar um DER na notação Peter Chain para cada estudo de caso utilizando Draw.io ou Pencil.
   
   1. Uma empresa de estacionamento deseja criar um sistema para controlar a utilização de suas vagas. Uma vaga contém um número identificador e um status (ocupada ou livre). Um cliente avulso ao chegar no estacionamento deixa o carro para o manobrista e recebe um comprovante do estacionamento que está registrando a placa do carro, marca, cor e hora de chegada e o número da vaga. Quando o cliente volta para receber o carro é registrado a hora de saída e calculado o valor do estacionamento. Já um cliente mensalista simplesmente é armazenado a hora de saída e o nome, já que paga o valor por mês.
 
