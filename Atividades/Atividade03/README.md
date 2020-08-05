@@ -3,7 +3,8 @@
 - Converter cada DER para a notação James Martin utilizando Draw.io.
 
   1.
-  ´´´bash
+
+  ```text
    (o)codigo                              (o)matricula
       |    ( )nome                           |   ( )nome
       |     |                 +              |    |                +
@@ -12,8 +13,12 @@
     +--------------+         \ /          +-------------+        \ /
                               +                |      | (0,N)     +
                             lota       salario( )     +-----------+
-  ´´´  
-  2. ( )logradouro                     (o)id
+  ```
+
+  1.
+  
+  ```text
+  ( )logradouro                     (o)id
       | ( )numero                       | ( )nome
       |  |                +             |  |
     +----------+ (1,1)   / \    (1,1) +--------+
@@ -30,8 +35,12 @@
                                 |  |           |  |  
                                 | ( )sexo      | ( )inscricao
                                ( )cpf         ( )cnpj
+  ```
 
-  3. (o)cpf             ( )data      (o)crm
+  1.
+  
+  ```text
+   (o)cpf             ( )data      (o)crm
       |  ( )nome         |            |  ( )nome  
       |   |            +-+-+          |   |  
    +----------+ (0,N)  |/ \|  (1,N) +--------+
@@ -39,3 +48,4 @@
    +----------+        |\ /|        +--------+
       |                +-+-+          |
     (( ))telefone     consulta       ( )especialidade
+   ```
