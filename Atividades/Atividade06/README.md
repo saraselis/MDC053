@@ -1,13 +1,14 @@
 # Objetivo
 
-- Executar comandos DDL e DML em um banco de dados utilizando MariaDB ou PostgreSQL.
+- Executar comandos DDL e DML em um banco de dados MariaDB ou PostgreSQL.
 
   1. Crie um banco de dados chamado academico no SGDB da sua preferência.
   
-  2. Crie uma conexão com o banco de dados academico no DBeaver
+  2. Crie uma conexão com o banco de dados academico no DBeaver.
   
   3. Execute o seguinte script DDL.
-
+  
+  ```sql
      CREATE TABLE aluno(
        id_aluno INT NOT NULL,
        nome_aluno VARCHAR(100) NOT NULL,
@@ -47,9 +48,11 @@
        FOREIGN KEY(id_turma) REFERENCES turma(id_turma) ON DELETE CASCADE,
        FOREIGN KEY(id_aluno) REFERENCES aluno(id_aluno)
      );
-  
+  ```
+
   4. Popule as tabelas do banco de dados com os seguintes registros.
 
+  ```sql
      INSERT INTO aluno(id_aluno, nome_aluno) VALUES(1, 'JOSE');
      INSERT INTO aluno(id_aluno, nome_aluno) VALUES(2, 'MARIA');
      INSERT INTO aluno(id_aluno, nome_aluno) VALUES(3, 'BRUNO');
@@ -71,7 +74,8 @@
      INSERT INTO historico(id_historico, id_turma, id_aluno) VALUES(4, 1, 4);
      INSERT INTO historico(id_historico, id_turma, id_aluno) VALUES(5, 2, 1);
      INSERT INTO historico(id_historico, id_turma, id_aluno) VALUES(6, 2, 2);
-
+  ```
+  
   5. Insira um registro na tabela turma com os valores 3 para id_turma, 20201 para num_periodo e 3 para id_professor. Qual foi o comando executado e o resultado obtido?
 
   6. Insira um registro na tabela turma com os valores 3 para id_turma, 20202 para num_periodo e 1 para id_disciplina. Qual foi o comando executado e o resultado obtido?

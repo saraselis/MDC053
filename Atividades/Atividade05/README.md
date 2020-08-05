@@ -2,7 +2,10 @@
 
 - Criar um script DDL utilizando DBeaver Community.
 
-  1. CURSO
+  1.
+
+  ```text  
+     CURSO
      +--------------------------------+
      |id_curso INT AI PK              |
      +--------------------------------+
@@ -31,8 +34,12 @@
      |email_aluno VARCHAR(100)        |
      |fone_contato CHAR(14)           |
      +--------------------------------+
+  ```
 
-  2. MEDICO
+  2.
+
+  ```text
+     MEDICO
      +---------------------------------+           ESPECIALIDADE
      |cod_medico INT AI PK             |           +---------------------------------------+
      +---------------------------------+\          |cod_especialidade INT NOT NULL PK      |
@@ -59,8 +66,12 @@
      +-----------------------------------+
      |nome_paciente VARCHAR(100) NOT NULL|
      +-----------------------------------+
+  ```
 
-  3. LIVRO
+  3.
+
+  ```text
+     LIVRO
      +---------------------------------+        EDITORA
      |id_livro INT AI PK               |        +---------------------------------+
      +---------------------------------+\       |cod_editora INT NOT NULL AI PK   |
@@ -91,3 +102,4 @@
      |num_matricula INT NOT NULL UNIQUE|
      |nom_aluno VARCHAR(100) NOT NULL  |
      +---------------------------------+
+  ```
